@@ -16,6 +16,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Export
+        run: npm run export
+
       - name: upload to server
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
